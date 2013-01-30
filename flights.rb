@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative 'flight_schedule'
 
 get '/' do
-  "This is a little app for Alison!"
+  haml :intro
 end
 
 get '/arriving_to/:airport_code' do
